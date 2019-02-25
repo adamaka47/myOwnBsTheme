@@ -1,0 +1,213 @@
+body
+	font-family: 'Raleway', sans-serif
+	width: 100%
+	height: 100%
+html
+	width: 100%
+	height: 100%
+.head
+	background: url('../img/header_bg.jpg') center no-repeat
+	background-size: cover
+	background-attachment: fixed
+	min-height: 700px
+	height: 100vh
+	position: relative
+	color: #fff
+	z-index: 4
+	position: relative
+	text-align: center
+	&::after
+		content: ' '
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		background-image: radial-gradient(rgba(120,55,11,.7), rgba(2,2,2,.8))
+		z-index: -2
+	&_info
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		width: 100%
+		height: 100%
+		h1
+			margin: 0
+			font-weight: 700
+			margin-bottom: 30px
+			font-size: 72px
+			text-transform: uppercase
+			margin-top: 0px
+		p
+			margin: 0
+			margin-bottom: 30px
+			font-size: 40px
+		button
+			color: #ddd !important
+			font-weight: 700
+
+.about
+	padding: 70px 0
+	background-color: #333
+	color: #fff
+	padding-bottom: 140px
+	img
+		border-radius: 50%
+	&_title
+		font-weight: 700
+		font-size: 54px
+		text-transform: uppercase
+		margin-bottom: 50px
+	&_me
+		position: relative
+		line-height: 1.7
+		&::before
+			content: ' '
+			position: absolute
+			height: 270px
+			width: 2px
+			top: -35px
+			left: -50px
+			background-color: #fea100
+		span
+			color: #fea100
+			font-weight: 700
+
+
+.portfolio
+	padding: 70px 0
+	background-color: #fed
+	img
+		margin-top: 50px
+	h2
+		font-weight: 700
+		font-size: 54px
+		text-transform: uppercase
+		color: #333
+
+
+.blog
+	padding: 70px 0
+	background-color: #333
+	color: #fff
+	img
+		overflow: hidden
+		border-radius: 4px
+		background-color: #333
+	text-align: center
+	h2
+		font-size: 54px
+		font-weight: 700
+		text-transform: uppercase
+		color: #fea100
+	h4
+		margin-top: 30px
+		font-weight: 700
+		color: #333
+	p
+		font-size: 18px
+		margin-top: 20px
+		color: #333
+	.card
+		margin: 40px 0
+		padding-bottom: 25px
+		border: 5px solid #fff
+		transition: .2s
+		&:hover
+			box-shadow: 0 2px 40px #eee
+			cursor: pointer
+			background-color: #333
+			img
+				overflow: hidden
+			h4
+				color: #fff
+			p
+				color: #fff
+.contact
+	background-color: #fea100
+	padding: 70px 0
+	padding-bottom: 110px
+	h2
+		text-align: center
+		font-weight: 700
+		text-transform: uppercase
+		font-size: 54px
+		margin-bottom: 80px
+	input, textarea
+		border-radius: 5px
+		font-weight: 700
+		font-size: 20px
+	input[type="submit"]
+		background-color: #333 !important
+		width: 150px
+		position: absolute
+		left: 50%
+		margin-left: -75px
+		margin-top: 20px
+		text-transform: uppercase
+		&:hover
+			color: #fea100
+		&:focus
+			outline: none
+
+@media(max-width: 1199.98px)
+	.about
+		&_me
+			&::before
+				left: -20px
+				top: -5px
+
+@media(max-width: 991.98px)
+	.about
+		text-align: center
+		&_title
+			font-size: 44px
+		img
+			display: inline-block
+			margin-bottom: 50px
+		&_me
+			text-align: center
+			width: 90%
+			margin-left: auto
+			margin-right: auto
+			&::before
+				width: 0
+				height: 0
+				display: none
+
+
+
+
+@media(max-width: 768px)
+	.head
+		h1
+			font-size: 36px
+		p
+			font-size: 24px
+			width: 85%
+	.portfolio
+		h2
+			font-size: 40px
+		img
+			width: 100%
+	.blog
+		h2
+			font-size: 40px
+	.contact	
+		h2
+			font-size: 40px
+
+.footer
+	background-color: #333
+	font-weight: 700
+	padding-bottom: 5px
+	padding-top: 20px
+	text-transform: uppercase
+	text-align: center
+	color: #fff
+	.odd
+		color: #fea100
+	.oe
+		color: #f333f3
+
